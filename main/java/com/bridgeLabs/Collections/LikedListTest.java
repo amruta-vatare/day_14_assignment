@@ -9,14 +9,11 @@ public class LikedListTest<E> {
         list.addNodeAtLast(70);
         list.display(list);
 
-
         LinkedList<String> list1 = new LinkedList<>();
         list1.addNodeAtFirst("Amruta");
         list1.addNodeAtFirst("Suraj");
         list1.addNodeAtFirst("Swapnil");
         list1.display(list1);
-
-
 
         LinkedList<Integer> list2 = new LinkedList<>();
         list2.addNodeAtLast(56);
@@ -24,12 +21,9 @@ public class LikedListTest<E> {
         list2.addNodeInBetween(56,70,30);
         list2.display(list2);
 
-        
         list2.deleteFirst(list2);
 
-
         list1.deleteLast(list1);
-
 
         list.search(30);
 
@@ -37,13 +31,13 @@ public class LikedListTest<E> {
         list2.display(list2);
 
         Stack<Integer> stack = new Stack<>();
-       stack.push(22);
-       stack.push(90);
-       stack.push(45);
-       stack.push(50);
+        stack.push(22);
+        stack.push(90);
+        stack.push(45);
+        stack.push(50);
         Integer value = stack.pop();
         System.out.println(value);
-        System.out.println(stack.size);
+        System.out.println("Size of stack is : "+stack.size);
         stack.popStack();
         Stack<String> stringStack = new Stack<>();
         System.out.println("Stack is empty "+stack.isEmpty());
