@@ -48,9 +48,16 @@ public class LinkedList<E> {
         }
        return null;
     }
+    //Test Case 5
+    public void deleteFirst(LinkedList<E> list){
+     Node<E> currentNode = head;
+     head = currentNode.next;
+     currentNode.next = null;
+     display(list);
+    }
 
 
-    public void display(LinkedList list){
+    public void display(LinkedList<E> list){
         Node<E> currentNode = head;
         while(currentNode != null){
             System.out.print(currentNode.getValue()+" ");
