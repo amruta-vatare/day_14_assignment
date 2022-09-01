@@ -6,22 +6,32 @@ public class LinkedList<E> {
     Node<E> newNode;
 
     //Test Case 1
-    public void createNode(E value){
+    public void addNodeAtLast(E value){
+        newNode = new Node(value);
         if(head == null &&  tail == null){
-            newNode = new Node(value);
             head =newNode;
         }else{
-            newNode = new Node<>(value);
             tail.next = newNode;
         }
         tail = newNode;
+    }
+
+    //Test Case 2
+    public void addNodeAtFirst(E value){
+        newNode = new Node<>(value);
+        if(head == null && tail == null){
+            tail = newNode;
+        }else{
+            newNode.next = head;
+        }
+        head = newNode;
     }
 
 
     public void display(LinkedList list){
         Node<E> currentNode = head;
         while(currentNode != null){
-            System.out.println(currentNode.getValue());
+            System.out.print(currentNode.getValue()+" ");
             currentNode = currentNode.next;
         }
     }
