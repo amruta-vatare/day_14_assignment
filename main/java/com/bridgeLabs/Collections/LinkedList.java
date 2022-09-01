@@ -49,6 +49,16 @@ public class LinkedList<E> {
        return null;
     }
 
+    //Test Case 7
+    public void search(E value){
+        Node node = searchNode(value);
+        if(node != null){
+            System.out.println("Node is present with value "+value);
+        }else{
+            System.out.println("Node is not present with value "+value);
+        }
+    }
+
     //Test Case 5
     public void deleteFirst(LinkedList<E> list){
      Node<E> currentNode = list.head;
