@@ -16,5 +16,11 @@ public class LikedListTest {
         list1.addNodeAtFirst(56);
        
         list1.display(list1);
+        System.out.println();
+        LinkedList<Integer> list2 = new LinkedList<>();
+        list2.addNodeAtLast(56);
+        list2.addNodeAtLast(70);
+        list2.addNodeInBetween(56,30);
+        list2.display(list2);
     }
 }
