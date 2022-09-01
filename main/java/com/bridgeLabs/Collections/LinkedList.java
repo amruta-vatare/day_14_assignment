@@ -9,7 +9,7 @@ public class LinkedList<E> {
     public void addNodeAtLast(E value){
         newNode = new Node(value);
         if(head == null &&  tail == null){
-            head =newNode;
+            head = newNode;
         }else{
             tail.next = newNode;
         }
