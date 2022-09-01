@@ -27,5 +27,9 @@ public class LikedListTest {
         System.out.println();
         
         list2.deleteFirst(list2);
+
+        System.out.println();
+
+        list1.deleteLast(list1);
     }
 }

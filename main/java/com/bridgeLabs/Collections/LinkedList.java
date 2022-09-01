@@ -48,12 +48,26 @@ public class LinkedList<E> {
         }
        return null;
     }
+
     //Test Case 5
     public void deleteFirst(LinkedList<E> list){
-     Node<E> currentNode = head;
-     head = currentNode.next;
+     Node<E> currentNode = list.head;
+     list.head = currentNode.next;
      currentNode.next = null;
      display(list);
+    }
+
+    //Test Case 6
+    public void deleteLast(LinkedList<E> list){
+        Node<E> currentNode = list.head;
+        while(currentNode != null){
+            if(currentNode.next == tail){
+                tail = currentNode;
+                currentNode.next = null;
+            }
+            currentNode = currentNode.next;
+        }
+        display(list);
     }
 
 
