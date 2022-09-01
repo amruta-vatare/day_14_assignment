@@ -44,7 +44,7 @@ public class LinkedList<E> {
         Node<E> currentNode = list.head;
         list.head = currentNode.next;
         currentNode.next = null;
-        display(list);
+        display();
     }
 
     //Use Case 6
@@ -57,7 +57,7 @@ public class LinkedList<E> {
             }
             currentNode = currentNode.next;
         }
-        display(list);
+        display();
     }
 
     //Use Case 7
@@ -92,7 +92,7 @@ public class LinkedList<E> {
         return null;
     }
 
-    public void display(LinkedList<E> list){
+    public void display(){
         Node<E> currentNode = head;
         while(currentNode != null){
             System.out.print(currentNode.getValue()+" ");

@@ -37,6 +37,7 @@ public class Stack<E> {
             System.out.print(value+" ");
             tempNode = tempNode.next;
         }
+        System.out.println();
     }
     public int size(){
         return this.size;
